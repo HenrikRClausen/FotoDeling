@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
 namespace FotoDeling.Models {
     public class Comment {
+        public DbSet Comments;
+
         public int CommentID { get; set; }
         public int PhotoID { get; set; }
         public string UserName { get; set; }
